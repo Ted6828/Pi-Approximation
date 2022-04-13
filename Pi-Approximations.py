@@ -33,5 +33,5 @@ def piCalc3(recur):
 
 precision = int(input("Enter precision... : "))
 print("Pi using Nilakantha Series:", piCalc(precision))
-print("Pi using Gregory-Leibniz series:", piCalc3(precision))
+print("Pi using Gregory-Leibniz Series:", piCalc3(precision))
 print("Pi using Monte Carlo Method:", piCalc2(precision))
