@@ -40,7 +40,8 @@ def piCalc2(total):
 
 ## Usage
 
-Simply call the function with a specified amount to recur, higher the amount higher the precision .
+Simply call the functions with a specified amount to recur, higher the amount higher the precision.
+For the Monte Carlo methord you need to import random but the Nilakantha Series doesn't require anything
 ```python
 print("Pi using Nilakantha Series:", piCalc(500000))
 ```
