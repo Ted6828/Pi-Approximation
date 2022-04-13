@@ -1,4 +1,5 @@
 from random import random
+import time
 
 def piCalc(recur):
     pi, den, operator = 3, 2, 1
@@ -32,6 +33,15 @@ def piCalc3(recur):
     return pi
 
 precision = int(input("Enter precision... : "))
+print("")
+start = time.time()
 print("Pi using Nilakantha Series:", piCalc(precision))
+end1 = time.time()
 print("Pi using Gregory-Leibniz Series:", piCalc3(precision))
+end2 = time.time()
 print("Pi using Monte Carlo Method:", piCalc2(precision))
+end3 = time.time()
+print("")
+print("Time taken by Nilakantha Series:", end1 - start , "seconds")
+print("Time taken by Gregory-Leibniz Series:", end2 - end1 , "seconds")
+print("Time taken by Monte Carlo Method:", end3 - end2 , "seconds")
